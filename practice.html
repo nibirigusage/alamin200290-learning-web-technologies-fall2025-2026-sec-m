@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+    <h2 id="head">Name</h2>
+    <input type="text" id="username" name="username"/>
+    <br><br>
+    <input type="button" name="click" value="Submit" onclick="validateName()"/> 
+    <p id="uError"></p>
+        
+    <script>
+        function validateName() {
+            let name = document.getElementById("username").value; 
+
+            if (name === "") {
+                alert("Name cannot be empty") ;  
+                return false;
+            } 
+            let words = name;
+        if(name = words.length < 2)
+        {
+            alert("Name must contain two words");
+            return false;
+        }else
+            alert("Name submitted")
+        }
+
+        
+    </script>
+</body>
+</html>
